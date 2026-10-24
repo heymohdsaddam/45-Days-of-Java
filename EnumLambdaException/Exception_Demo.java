@@ -32,10 +32,12 @@ public class Exception_Demo {
             System.out.println(arr[3]);
             System.out.println(arr[6]);
 
-        } catch (ArithmeticException e) {
+        } catch (ArithmeticException e) { // it will invoke when any arithmatic exception happen
             System.out.println("Dekh ke divide kro bhai !!");
-        } catch (IndexOutOfBoundsException e) {
+        } catch (IndexOutOfBoundsException e) { // it will invoke when any indexOutOfBoundsException happen
             System.out.println("Limit me rahlo bhai!!");
+        } catch (Exception e) {
+            System.out.println("Samasya hai re baba : " + e.getLocalizedMessage()); // it will invoke for any exception
         }
         System.out.println("Ho gya jo hona tha!!!");
     }
